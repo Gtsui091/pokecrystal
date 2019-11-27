@@ -8,18 +8,17 @@ _OakText7::
 	line "ready?"
 
 	para "Your very own"
-	line "#MON story is"
+	line "BCIT story is"
 	cont "about to unfold."
 
-	para "You'll face fun"
-	line "times and tough"
-	cont "challenges."
+	para "You'll face hard"
+	line "and tough times"
 
-	para "A world of dreams"
-	line "and adventures"
+	para "A life of dispair"
+	line "and sadness"
 
-	para "with #MON"
-	line "awaits! Let's go!"
+	para "while attending"
+	line "BCIT. Let's go!"
 
 	para "I'll be seeing you"
 	line "later!"
@@ -1538,7 +1537,7 @@ _TimesetAskAdjustDSTText::
 _MomLostGearBookletText::
 	text "I lost the in-"
 	line "struction booklet"
-	cont "for the #GEAR."
+	cont "for the MACBOOK."
 
 	para "Come back again in"
 	line "a while."

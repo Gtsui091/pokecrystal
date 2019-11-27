@@ -311,7 +311,7 @@ RadioTower1FRadioCardWomanOfferQuizText:
 	cont "win a RADIO CARD."
 
 	para "Slide it into your"
-	line "#GEAR to play"
+	line "MACBOOK to play"
 
 	para "the radio anytime,"
 	line "anywhere."
@@ -379,7 +379,7 @@ RadioTower1FRadioCardWomanYouWinText:
 	done
 
 RadioTower1FPokegearIsARadioText:
-	text "<PLAYER>'s #GEAR"
+	text "<PLAYER>'s MACBOOK"
 	line "can now double as"
 	cont "a radio!"
 	done

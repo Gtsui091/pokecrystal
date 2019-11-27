@@ -162,7 +162,7 @@ LavRadioTower1FSuperNerd2Text:
 	para "I am the super"
 	line "MUSIC DIRECTOR!"
 
-	para "Huh? Your #GEAR"
+	para "Huh? Your MACBOOK"
 	line "can't tune into my"
 
 	para "music programs."

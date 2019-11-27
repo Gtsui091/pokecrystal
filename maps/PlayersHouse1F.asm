@@ -34,7 +34,7 @@ MeetMomRightScript:
 	applymovement PLAYERSHOUSE1F_MOM1, MomWalksToPlayerMovement
 MeetMomScript:
 	opentext
-	writetext ElmsLookingForYouText
+	writetext RaphsLookingForYouText
 	promptbutton
 	getstring STRING_BUFFER_4, PokegearName
 	scall PlayersHouse1FReceiveItemStd
@@ -44,7 +44,7 @@ MeetMomScript:
 	setscene SCENE_FINISHED
 	setevent EVENT_PLAYERS_HOUSE_MOM_1
 	clearevent EVENT_PLAYERS_HOUSE_MOM_2
-	writetext MomGivesPokegearText
+	writetext MomGivesMacbookText
 	promptbutton
 	special SetDayOfWeek
 .SetDayOfWeek:
@@ -104,7 +104,7 @@ MeetMomTalkedScript:
 	sjump MeetMomScript
 
 PokegearName:
-	db "#GEAR@"
+	db "MACBOOK"
 
 PlayersHouse1FReceiveItemStd:
 	jumpstd receiveitem
@@ -124,13 +124,13 @@ MomScript:
 	iftrue .GaveMysteryEgg
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 	iftrue .GotAPokemon
-	writetext HurryUpElmIsWaitingText
+	writetext HurryUpRaphIsWaitingText
 	waitbutton
 	closetext
 	end
 
 .GotAPokemon:
-	writetext SoWhatWasProfElmsErrandText
+	writetext SoWhatWasProfRaphsErrandText
 	waitbutton
 	closetext
 	end
@@ -210,33 +210,33 @@ MomWalksBackMovement:
 	slow_step LEFT
 	step_end
 
-ElmsLookingForYouText:
+RaphsLookingForYouText:
 	text "Oh, <PLAYER>…! Our"
 	line "neighbor, PROF."
 
-	para "ELM, was looking"
-	line "for you."
+	para "RAPH, was look-"
+	line "ing for you."
 
 	para "He said he wanted"
 	line "you to do some-"
 	cont "thing for him."
 
 	para "Oh! I almost for-"
-	line "got! Your #MON"
+	line "got! Your MACBOOK"
 
-	para "GEAR is back from"
-	line "the repair shop."
+	para "is back from"
+	line "the Apple store."
 
 	para "Here you go!"
 	done
 
-MomGivesPokegearText:
-	text "#MON GEAR, or"
-	line "just #GEAR."
+MomGivesMacbookText:
+	text "A MACBOOK, or"
+	line "just a laptop."
 
 	para "It's essential if"
 	line "you want to be a"
-	cont "good trainer."
+	cont "CST student."
 
 	para "Oh, the day of the"
 	line "week isn't set."
@@ -264,19 +264,21 @@ ComeHomeForDSTText:
 
 KnowTheInstructionsText:
 	text "Don't you just"
-	line "turn the #GEAR"
+	line "turn the MACBOOK"
 
 	para "on and select the"
-	line "PHONE icon?"
+	line "FACETIME ic-"
+	cont "on?"
 	done
 
 DontKnowTheInstructionsText:
 	text "I'll read the"
 	line "instructions."
 
-	para "Turn the #GEAR"
+	para "Turn the MACBOOK"
 	line "on and select the"
-	cont "PHONE icon."
+	cont "FACETIME ic-"
+	cont "on."
 	done
 
 InstructionsNextText:
@@ -290,16 +292,16 @@ InstructionsNextText:
 	line "convenient?"
 	done
 
-HurryUpElmIsWaitingText:
-	text "PROF.ELM is wait-"
-	line "ing for you."
+HurryUpRaphIsWaitingText:
+	text "PROF.RAPH is wai-"
+	line "ting for you."
 
-	para "Hurry up, baby!"
+	para "Hurry up, <PLAYER>!"
 	done
 
-SoWhatWasProfElmsErrandText:
+SoWhatWasProfRaphsErrandText:
 	text "So, what was PROF."
-	line "ELM's errand?"
+	line "RAPH's errand?"
 
 	para "…"
 

@@ -1535,19 +1535,19 @@ _OakText1::
 	line "keep you waiting!"
 
 	para "Welcome to the"
-	line "world of #MON!"
+	line "world of BCIT!"
 
-	para "My name is OAK."
+	para "My name's DEAN."
 
-	para "People call me the"
-	line "#MON PROF."
+	para "People call me "
+	line "DEAN, the DEAN!"
 	prompt
 
 _OakText2::
-	text "This world is in-"
-	line "habited by crea-"
-	cont "tures that we call"
-	cont "#MON.@"
+	text "This school is a-"
+	line "bout CST students"
+	cont "who take"
+	cont "Architecture."
 	text_end
 
 _OakText3::
@@ -1557,26 +1557,29 @@ _OakText3::
 	text_end ; unused
 
 _OakText4::
-	text "People and #MON"
-	line "live together by"
+	text "Students must take"
+	line "Architecture to"
 
-	para "supporting each"
-	line "other."
+	para "receive a dipl-"
+	line "oma. Otherwise,"
+	cont "they'll fail."
 
-	para "Some people play"
-	line "with #MON, some"
-	cont "battle with them."
+	para "Additionally,"
+	line "they are req-"
+	cont "uired to create"
+	cont "a project, rela-"
+	cont "ed to Assembly."
 	prompt
 
 _OakText5::
-	text "But we don't know"
-	line "everything about"
-	cont "#MON yet."
+	text "Here is a project"
+	line "by Group 20, all"
+	cont "about Assembly."
 
-	para "There are still"
-	line "many mysteries to"
-	cont "solve."
+	para "I hope you like"
+	line "the creativity"
+	cont "of this assign-"
+	cont "ment!"
 
-	para "That's why I study"
-	line "#MON every day."
+	
 	prompt
