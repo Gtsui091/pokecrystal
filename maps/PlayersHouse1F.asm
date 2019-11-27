@@ -104,7 +104,7 @@ MeetMomTalkedScript:
 	sjump MeetMomScript
 
 PokegearName:
-	db "MACBOOK"
+	db "MACBOOK@"
 
 PlayersHouse1FReceiveItemStd:
 	jumpstd receiveitem
