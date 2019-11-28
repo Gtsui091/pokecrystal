@@ -1,6 +1,8 @@
 	object_const_def ; object_event constants
+	const RAPHSLAB_RAPH
 	const ELMSLAB_ELM
 	const ELMSLAB_ELMS_AIDE
+	const RAPHSLAB_RAPHS_TA
 	const ELMSLAB_POKE_BALL1
 	const ELMSLAB_POKE_BALL2
 	const ELMSLAB_POKE_BALL3
@@ -8,18 +10,18 @@
 
 ElmsLab_MapScripts:
 	db 6 ; scene scripts
-	scene_script .MeetElm ; SCENE_DEFAULT
-	scene_script .DummyScene1 ; SCENE_ELMSLAB_CANT_LEAVE
-	scene_script .DummyScene2 ; SCENE_ELMSLAB_NOTHING
+	scene_script .MeetRaph ; SCENE_DEFAULT
+	scene_script .DummyScene1 ; SCENE_RAPHSLAB_CANT_LEAVE
+	scene_script .DummyScene2 ; SCENE_RAPHSLAB_NOTHING
 	scene_script .DummyScene3 ; SCENE_ELMSLAB_MEET_OFFICER
 	scene_script .DummyScene4 ; SCENE_ELMSLAB_UNUSED
-	scene_script .DummyScene5 ; SCENE_ELMSLAB_AIDE_GIVES_POTION
+	scene_script .DummyScene5 ; SCENE_RAPHSLAB_TA_GIVES_POTION
 
 	db 1 ; callbacks
-	callback MAPCALLBACK_OBJECTS, .MoveElmCallback
+	callback MAPCALLBACK_OBJECTS, .MoveRaphCallback
 
-.MeetElm:
-	prioritysjump .WalkUpToElm
+.MeetRaph:
+	prioritysjump .WalkUpToRaph
 	end
 
 .DummyScene1:
@@ -37,52 +39,52 @@ ElmsLab_MapScripts:
 .DummyScene5:
 	end
 
-.MoveElmCallback:
+.MoveRaphCallback:
 	checkscene
 	iftrue .Skip ; not SCENE_DEFAULT
-	moveobject ELMSLAB_ELM, 3, 4
+	moveobject RAPHSLAB_RAPH, 3, 4
 .Skip:
 	return
 
-.WalkUpToElm:
-	applymovement PLAYER, ElmsLab_WalkUpToElmMovement
-	showemote EMOTE_SHOCK, ELMSLAB_ELM, 15
-	turnobject ELMSLAB_ELM, RIGHT
+.WalkUpToRaph:
+	applymovement PLAYER, RaphsLab_WalkUpToElmMovement
+	showemote EMOTE_SHOCK, RAPHSLAB_RAPH, 15
+	turnobject RAPHSLAB_RAPH, RIGHT
 	opentext
-	writetext ElmText_Intro
+	writetext RaphText_Intro
 .MustSayYes:
 	yesorno
-	iftrue .ElmGetsEmail
-	writetext ElmText_Refused
+	iftrue .RaphGetsEmail
+	writetext RaphText_Refused
 	sjump .MustSayYes
 
-.ElmGetsEmail:
-	writetext ElmText_Accepted
+.RaphGetsEmail:
+	writetext RaphText_Accepted
 	promptbutton
-	writetext ElmText_ResearchAmbitions
+	writetext RaphText_ResearchAmbitions
 	waitbutton
 	closetext
 	playsound SFX_GLASS_TING
 	pause 30
-	showemote EMOTE_SHOCK, ELMSLAB_ELM, 10
-	turnobject ELMSLAB_ELM, DOWN
+	showemote EMOTE_SHOCK, RAPHSLAB_RAPH, 10
+	turnobject RAPHSLAB_RAPH, DOWN
 	opentext
-	writetext ElmText_GotAnEmail
+	writetext RaphText_GotAnEmail
 	waitbutton
 	closetext
 	opentext
-	turnobject ELMSLAB_ELM, RIGHT
-	writetext ElmText_MissionFromMrPokemon
+	turnobject RAPHSLAB_RAPH, RIGHT
+	writetext RaphText_EmailFromStudent
 	waitbutton
 	closetext
-	applymovement ELMSLAB_ELM, ElmsLab_ElmToDefaultPositionMovement1
+	applymovement RAPHSLAB_RAPH, RaphsLab_RaphToDefaultPositionMovement1
 	turnobject PLAYER, UP
-	applymovement ELMSLAB_ELM, ElmsLab_ElmToDefaultPositionMovement2
+	applymovement RAPHSLAB_RAPH, RaphsLab_RaphToDefaultPositionMovement2
 	turnobject PLAYER, RIGHT
 	opentext
-	writetext ElmText_ChooseAPokemon
+	writetext RaphText_ChooseAPokemon
 	waitbutton
-	setscene SCENE_ELMSLAB_CANT_LEAVE
+	setscene SCENE_RAPHSLAB_CANT_LEAVE
 	closetext
 	end
 
@@ -147,18 +149,18 @@ ElmCheckGotEggAgain:
 	end
 
 LabTryToLeaveScript:
-	turnobject ELMSLAB_ELM, DOWN
+	turnobject RAPHSLAB_RAPH, DOWN
 	opentext
 	writetext LabWhereGoingText
 	waitbutton
 	closetext
-	applymovement PLAYER, ElmsLab_CantLeaveMovement
+	applymovement PLAYER, RaphsLab_CantLeaveMovement
 	end
 
 JoshPokeBallScript:
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 	iftrue LookAtElmPokeBallScript
-	turnobject ELMSLAB_ELM, DOWN
+	turnobject RAPHSLAB_RAPH, DOWN
 	refreshscreen
 	pokepic MEW
 	cry MEW
@@ -188,7 +190,7 @@ JoshPokeBallScript:
 GordonPokeBallScript:
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 	iftrue LookAtElmPokeBallScript
-	turnobject ELMSLAB_ELM, DOWN
+	turnobject RAPHSLAB_RAPH, DOWN
 	refreshscreen
 	pokepic DITTO
 	cry DITTO
@@ -213,17 +215,17 @@ GordonPokeBallScript:
 	applymovement PLAYER, AfterGordonMovement
 	sjump RaphDirectionsScript
 
-ChikoritaPokeBallScript:
+LinhPokeBallScript:
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 	iftrue LookAtElmPokeBallScript
-	turnobject ELMSLAB_ELM, DOWN
+	turnobject RAPHSLAB_RAPH, DOWN
 	refreshscreen
 	pokepic CHIKORITA
 	cry CHIKORITA
 	waitbutton
 	closepokepic
 	opentext
-	writetext TakeJoshText
+	writetext TakeLinhText
 	yesorno
 	iffalse DidntChooseStarterScript
 	disappear ELMSLAB_POKE_BALL3
@@ -231,7 +233,7 @@ ChikoritaPokeBallScript:
 	writetext ChoseStarterText
 	promptbutton
 	waitsfx
-	getmonname STRING_BUFFER_3, CHIKORITA
+	getmonname STRING_BUFFER_3, PIKACHU
 	writetext ReceivedStarterText
 	playsound SFX_CAUGHT_MON
 	waitsfx
@@ -260,19 +262,19 @@ RaphDirectionsScript:
 	waitsfx
 	waitbutton
 	closetext
-	turnobject ELMSLAB_ELM, LEFT
+	turnobject RAPHSLAB_RAPH, LEFT
 	opentext
 	writetext RaphsDirectionsText2
 	waitbutton
 	closetext
-	turnobject ELMSLAB_ELM, DOWN
+	turnobject RAPHSLAB_RAPH, DOWN
 	opentext
 	writetext RaphDirectionsText3
 	waitbutton
 	closetext
 	setevent EVENT_GOT_A_POKEMON_FROM_ELM
 	setevent EVENT_RIVAL_CHERRYGROVE_CITY
-	setscene SCENE_ELMSLAB_AIDE_GIVES_POTION
+	setscene SCENE_RAPHSLAB_TA_GIVES_POTION
 	setmapscene NEW_BARK_TOWN, SCENE_FINISHED
 	end
 
@@ -370,7 +372,7 @@ ShowElmTogepiScript:
 	writetext ShowElmTogepiText1
 	waitbutton
 	closetext
-	showemote EMOTE_SHOCK, ELMSLAB_ELM, 15
+	showemote EMOTE_SHOCK, RAPHSLAB_RAPH, 15
 	setevent EVENT_SHOWED_TOGEPI_TO_ELM
 	opentext
 	writetext ShowElmTogepiText2
@@ -436,62 +438,62 @@ ElmJumpBackScript2:
 	end
 
 ElmJumpUpScript:
-	applymovement ELMSLAB_ELM, ElmJumpUpMovement
+	applymovement RAPHSLAB_RAPH, ElmJumpUpMovement
 	opentext
 	end
 
 ElmJumpDownScript:
-	applymovement ELMSLAB_ELM, ElmJumpDownMovement
+	applymovement RAPHSLAB_RAPH, ElmJumpDownMovement
 	opentext
 	end
 
 ElmJumpLeftScript:
-	applymovement ELMSLAB_ELM, ElmJumpLeftMovement
+	applymovement RAPHSLAB_RAPH, ElmJumpLeftMovement
 	opentext
 	end
 
 ElmJumpRightScript:
-	applymovement ELMSLAB_ELM, ElmJumpRightMovement
+	applymovement RAPHSLAB_RAPH, ElmJumpRightMovement
 	opentext
 	end
 
-AideScript_WalkPotion1:
-	applymovement ELMSLAB_ELMS_AIDE, AideWalksRight1
+TAScript_WalkPotion1:
+	applymovement RAPHSLAB_RAPHS_TA, TAWalksRight1
 	turnobject PLAYER, DOWN
 	scall AideScript_GivePotion
-	applymovement ELMSLAB_ELMS_AIDE, AideWalksLeft1
+	applymovement RAPHSLAB_RAPHS_TA, TAWalksLeft1
 	end
 
-AideScript_WalkPotion2:
-	applymovement ELMSLAB_ELMS_AIDE, AideWalksRight2
+TAScript_WalkPotion2:
+	applymovement RAPHSLAB_RAPHS_TA, TAWalksRight2
 	turnobject PLAYER, DOWN
 	scall AideScript_GivePotion
-	applymovement ELMSLAB_ELMS_AIDE, AideWalksLeft2
+	applymovement RAPHSLAB_RAPHS_TA, TAWalksLeft2
 	end
 
 AideScript_GivePotion:
 	opentext
-	writetext AideText_GiveYouPotion
+	writetext TAText_GiveYouPotion
 	promptbutton
-	verbosegiveitem POTION
-	writetext AideText_AlwaysBusy
+	verbosegiveitem ASSIGNMENT
+	writetext TAText_AlwaysBusy
 	waitbutton
 	closetext
-	setscene SCENE_ELMSLAB_NOTHING
+	setscene SCENE_RAPHSLAB_NOTHING
 	end
 
 AideScript_WalkBalls1:
-	applymovement ELMSLAB_ELMS_AIDE, AideWalksRight1
+	applymovement RAPHSLAB_RAPHS_TA, TAWalksRight1
 	turnobject PLAYER, DOWN
 	scall AideScript_GiveYouBalls
-	applymovement ELMSLAB_ELMS_AIDE, AideWalksLeft1
+	applymovement RAPHSLAB_RAPHS_TA, TAWalksLeft1
 	end
 
 AideScript_WalkBalls2:
-	applymovement ELMSLAB_ELMS_AIDE, AideWalksRight2
+	applymovement RAPHSLAB_RAPHS_TA, TAWalksRight2
 	turnobject PLAYER, DOWN
 	scall AideScript_GiveYouBalls
-	applymovement ELMSLAB_ELMS_AIDE, AideWalksLeft2
+	applymovement RAPHSLAB_RAPHS_TA, TAWalksLeft2
 	end
 
 AideScript_GiveYouBalls:
@@ -505,7 +507,7 @@ AideScript_GiveYouBalls:
 	promptbutton
 	itemnotify
 	closetext
-	setscene SCENE_ELMSLAB_NOTHING
+	setscene SCENE_RAPHSLAB_NOTHING
 	end
 
 AideScript_ReceiveTheBalls:
@@ -521,7 +523,7 @@ ElmsAideScript:
 	iftrue AideScript_ExplainBalls
 	checkevent EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON
 	iftrue AideScript_TheftTestimony
-	writetext AideText_AlwaysBusy
+	writetext TAText_AlwaysBusy
 	waitbutton
 	closetext
 	end
@@ -560,7 +562,7 @@ CopScript:
 	closetext
 	applymovement ELMSLAB_OFFICER, OfficerLeavesMovement
 	disappear ELMSLAB_OFFICER
-	setscene SCENE_ELMSLAB_NOTHING
+	setscene SCENE_RAPHSLAB_NOTHING
 	end
 
 ElmsLabWindow:
@@ -608,7 +610,7 @@ ElmsLabTrashcan2:
 ElmsLabBookshelf:
 	jumpstd difficultbookshelf
 
-ElmsLab_WalkUpToElmMovement:
+RaphsLab_WalkUpToElmMovement:
 	step UP
 	step UP
 	step UP
@@ -619,7 +621,7 @@ ElmsLab_WalkUpToElmMovement:
 	turn_head LEFT
 	step_end
 
-ElmsLab_CantLeaveMovement:
+RaphsLab_CantLeaveMovement:
 	step UP
 	step_end
 
@@ -641,26 +643,26 @@ OfficerLeavesMovement:
 	step DOWN
 	step_end
 
-AideWalksRight1:
+TAWalksRight1:
 	step RIGHT
 	step RIGHT
 	turn_head UP
 	step_end
 
-AideWalksRight2:
+TAWalksRight2:
 	step RIGHT
 	step RIGHT
 	step RIGHT
 	turn_head UP
 	step_end
 
-AideWalksLeft1:
+TAWalksLeft1:
 	step LEFT
 	step LEFT
 	turn_head DOWN
 	step_end
 
-AideWalksLeft2:
+TAWalksLeft2:
 	step LEFT
 	step LEFT
 	step LEFT
@@ -691,11 +693,11 @@ ElmJumpRightMovement:
 	remove_fixed_facing
 	step_end
 
-ElmsLab_ElmToDefaultPositionMovement1:
+RaphsLab_RaphToDefaultPositionMovement1:
 	step UP
 	step_end
 
-ElmsLab_ElmToDefaultPositionMovement2:
+RaphsLab_RaphToDefaultPositionMovement2:
 	step RIGHT
 	step RIGHT
 	step UP
@@ -723,32 +725,33 @@ AfterLinhMovement:
 	turn_head UP
 	step_end
 
-ElmText_Intro:
-	text "ELM: <PLAY_G>!"
+RaphText_Intro:
+	text "RAPH: <PLAY_G>!"
 	line "There you are!"
 
-	para "I needed to ask"
-	line "you a favor."
+	para "Welcome to "
+	line "COMP 2721."
 
-	para "I'm conducting new"
-	line "#MON research"
+	para "Computer"
+	line "Architecture!"
 
-	para "right now. I was"
-	line "wondering if you"
+	para "You will learn"
+	line "about how"
 
-	para "could help me with"
-	line "it, <PLAY_G>."
+	para "computer hardware"
+	line "and how software."
 
-	para "You see…"
+	para "CIRCUITS!"
+	line "ADDERS!"
 
-	para "I'm writing a"
-	line "paper that I want"
+	para "LATCHES!"
+	line "MCU!"
 
-	para "to present at a"
-	line "conference."
+	para "MPUS!"
+	line "ASSEMBLY!"
 
-	para "But there are some"
-	line "things I don't"
+	para "Much more"
+	line "things you don't"
 
 	para "quite understand"
 	line "yet."
@@ -756,39 +759,41 @@ ElmText_Intro:
 	para "So!"
 
 	para "I'd like you to"
-	line "raise a #MON"
+	line "partner a student"
 
 	para "that I recently"
-	line "caught."
+	line "enrolled."
 	done
 
-ElmText_Accepted:
+RaphText_Accepted:
 	text "Thanks, <PLAY_G>!"
 
-	para "You're a great"
-	line "help!"
+	para "You're on your"
+	line "way to get an"
+
+	para "A!"
 	done
 
-ElmText_Refused:
-	text "But… Please, I"
-	line "need your help!"
+RaphText_Refused:
+	text "Are don't want"
+	line "to fail right?"
 	done
 
-ElmText_ResearchAmbitions:
-	text "When I announce my"
-	line "findings, I'm sure"
+RaphText_ResearchAmbitions:
+	text "For this class"
+	line "you will need"
 
-	para "we'll delve a bit"
-	line "deeper into the"
+	para "to do a project"
+	line "of your"
 
-	para "many mysteries of"
-	line "#MON."
+	para "choosing to "
+	line "learn the"
 
-	para "You can count on"
-	line "it!"
+	para "mysteries of"
+	line "assemby!"
 	done
 
-ElmText_GotAnEmail:
+RaphText_GotAnEmail:
 	text "Oh, hey! I got an"
 	line "e-mail!"
 
@@ -798,49 +803,37 @@ ElmText_GotAnEmail:
 	para "Okay…"
 	done
 
-ElmText_MissionFromMrPokemon:
+RaphText_EmailFromStudent:
 	text "Hey, listen."
 
-	para "I have an acquain-"
-	line "tance called MR."
-	cont "#MON."
+	para "I have a meeting"
+	line "with another"
+	cont "student."
 
-	para "He keeps finding"
-	line "weird things and"
+	para "Hurry and start "
+	line "your project now."
 
-	para "raving about his"
-	line "discoveries."
+	para "Remember show"
+	line "up to class"
 
-	para "Anyway, I just got"
-	line "an e-mail from him"
+	para "and labs and"
+	line "you'll do well"
 
-	para "saying that this"
-	line "time it's real."
+	para "in my class."
 
-	para "It is intriguing,"
-	line "but we're busy"
-
-	para "with our #MON"
-	line "research…"
-
-	para "Wait!"
-
-	para "I know!"
-
-	para "<PLAY_G>, can you"
-	line "go in our place?"
+	para "<PLAY_G>,"
+	line "Good Luck!"
 	done
 
-ElmText_ChooseAPokemon:
+RaphText_ChooseAPokemon:
 	text "I want you to"
-	line "raise one of the"
+	line "pick a partner"
 
-	para "#MON contained"
+	para "contained"
 	line "in these BALLS."
 
-	para "You'll be that"
-	line "#MON's first"
-	cont "partner, <PLAY_G>!"
+	para "... yes BALLS"
+	line "..."
 
 	para "Go on. Pick one!"
 	done
@@ -852,7 +845,7 @@ ElmText_LetYourMonBattleIt:
 	done
 
 LabWhereGoingText:
-	text "ELM: Wait! Where"
+	text "RAPH: Wait! Where"
 	line "are you going?"
 	done
 
@@ -867,8 +860,8 @@ TakeGordonText:
 	done
 
 TakeLinhText:
-	text "RAPH: So, you like"
-	line "LINH?"
+	text "RAPH: So, you"
+	line "like LINH?"
 	done
 
 DidntChooseStarterText:
@@ -886,7 +879,9 @@ ChoseStarterText:
 	done
 
 ReceivedStarterText:
-	text "<PLAYER> received"
+	text "<PLAYER> partnered"
+
+	para "with"
 	line "@"
 	text_ram wStringBuffer3
 	text "!"
@@ -913,11 +908,11 @@ RaphDirectionsText1:
 	done
 
 RaphsDirectionsText2:
-	text "If #MON is"
-	line "failing, you should"
+	text "If you are"
+	line "failing, you "
 
-	para "tell #MON to study"
-	line "more."
+	para "should study"
+	line "more..."
 
 	para "Feel free to find"
 	line "go to a quiet place."
@@ -1212,16 +1207,16 @@ ElmsLabSignpostText_Egg:
 	cont "by PROF.ELM."
 	done
 
-AideText_GiveYouPotion:
+TAText_GiveYouPotion:
 	text "<PLAY_G>, I want"
 	line "you to have this"
-	cont "for your errand."
+	cont "Assignment."
 	done
 
-AideText_AlwaysBusy:
-	text "There are only two"
-	line "of us, so we're"
-	cont "always busy."
+TAText_AlwaysBusy:
+	text "Finish this"
+	line "with your"
+	cont "partner."
 	done
 
 AideText_TheftTestimony:
@@ -1373,12 +1368,12 @@ ElmsLab_MapEvents:
 	warp_event  5, 11, NEW_BARK_TOWN, 1
 
 	db 8 ; coord events
-	coord_event  4,  6, SCENE_ELMSLAB_CANT_LEAVE, LabTryToLeaveScript
-	coord_event  5,  6, SCENE_ELMSLAB_CANT_LEAVE, LabTryToLeaveScript
+	coord_event  4,  6, SCENE_RAPHSLAB_CANT_LEAVE, LabTryToLeaveScript
+	coord_event  5,  6, SCENE_RAPHSLAB_CANT_LEAVE, LabTryToLeaveScript
 	coord_event  4,  5, SCENE_ELMSLAB_MEET_OFFICER, MeetCopScript
 	coord_event  5,  5, SCENE_ELMSLAB_MEET_OFFICER, MeetCopScript2
-	coord_event  4,  8, SCENE_ELMSLAB_AIDE_GIVES_POTION, AideScript_WalkPotion1
-	coord_event  5,  8, SCENE_ELMSLAB_AIDE_GIVES_POTION, AideScript_WalkPotion2
+	coord_event  4,  8, SCENE_RAPHSLAB_TA_GIVES_POTION, TAScript_WalkPotion1
+	coord_event  5,  8, SCENE_RAPHSLAB_TA_GIVES_POTION, TAScript_WalkPotion2
 	coord_event  4,  8, SCENE_ELMSLAB_AIDE_GIVES_POKE_BALLS, AideScript_WalkBalls1
 	coord_event  5,  8, SCENE_ELMSLAB_AIDE_GIVES_POKE_BALLS, AideScript_WalkBalls2
 
@@ -1405,5 +1400,5 @@ ElmsLab_MapEvents:
 	object_event  2,  9, SPRITE_SCIENTIST, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ElmsAideScript, EVENT_ELMS_AIDE_IN_LAB
 	object_event  6,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, JoshPokeBallScript, EVENT_JOSH_POKEBALL_IN_ELMS_LAB
 	object_event  7,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GordonPokeBallScript, EVENT_GORDON_POKEBALL_IN_ELMS_LAB
-	object_event  8,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ChikoritaPokeBallScript, EVENT_CHIKORITA_POKEBALL_IN_ELMS_LAB
+	object_event  8,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LinhPokeBallScript, EVENT_LINH_POKEBALL_IN_ELMS_LAB
 	object_event  5,  3, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CopScript, EVENT_COP_IN_ELMS_LAB
