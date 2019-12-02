@@ -70,7 +70,7 @@ Pokered_MonIndices:
 	db PILOSWINE ; MISSINGNO.
 	db DODUO
 	db POLIWAG
-	db JYNX
+	db LINH
 	db MOLTRES
 	db ARTICUNO
 	db ZAPDOS

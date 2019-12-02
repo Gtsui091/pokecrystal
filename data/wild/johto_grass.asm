@@ -713,7 +713,7 @@ JohtoGrassWildMons:
 	db 24, SWINUB
 	db 25, GOLBAT
 	db 23, GOLBAT
-	db 22, JYNX
+	db 22, LINH
 	; day
 	db 22, SWINUB
 	db 23, ZUBAT
@@ -721,7 +721,7 @@ JohtoGrassWildMons:
 	db 24, SWINUB
 	db 25, GOLBAT
 	db 23, GOLBAT
-	db 22, JYNX
+	db 22, LINH
 	; nite
 	db 22, DELIBIRD
 	db 23, ZUBAT
@@ -739,16 +739,16 @@ JohtoGrassWildMons:
 	db 24, GOLBAT
 	db 25, SWINUB
 	db 26, GOLBAT
-	db 22, JYNX
-	db 24, JYNX
+	db 22, LINH
+	db 24, LINH
 	; day
 	db 23, SWINUB
 	db 24, ZUBAT
 	db 24, GOLBAT
 	db 25, SWINUB
 	db 26, GOLBAT
-	db 22, JYNX
-	db 24, JYNX
+	db 22, LINH
+	db 24, LINH
 	; nite
 	db 23, DELIBIRD
 	db 24, ZUBAT
@@ -766,16 +766,16 @@ JohtoGrassWildMons:
 	db 24, GOLBAT
 	db 25, SWINUB
 	db 26, GOLBAT
-	db 22, JYNX
-	db 24, JYNX
+	db 22, LINH
+	db 24, LINH
 	; day
 	db 23, SWINUB
 	db 24, ZUBAT
 	db 24, GOLBAT
 	db 25, SWINUB
 	db 26, GOLBAT
-	db 22, JYNX
-	db 24, JYNX
+	db 22, LINH
+	db 24, LINH
 	; nite
 	db 23, DELIBIRD
 	db 24, ZUBAT
@@ -792,17 +792,17 @@ JohtoGrassWildMons:
 	db 25, ZUBAT
 	db 25, GOLBAT
 	db 26, SWINUB
-	db 22, JYNX
-	db 24, JYNX
-	db 26, JYNX
+	db 22, LINH
+	db 24, LINH
+	db 26, LINH
 	; day
 	db 24, SWINUB
 	db 25, ZUBAT
 	db 25, GOLBAT
 	db 26, SWINUB
-	db 22, JYNX
-	db 24, JYNX
-	db 26, JYNX
+	db 22, LINH
+	db 24, LINH
+	db 26, LINH
 	; nite
 	db 24, DELIBIRD
 	db 25, ZUBAT

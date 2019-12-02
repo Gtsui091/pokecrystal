@@ -153,7 +153,7 @@ NewPokedexOrder:
 	db MAGBY
 	db MAGMAR
 	db SMOOCHUM
-	db JYNX
+	db LINH
 	db ELEKID
 	db ELECTABUZZ
 	db MR__MIME

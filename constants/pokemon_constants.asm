@@ -142,7 +142,7 @@
 	const STARMIE    ; 79
 	const MR__MIME   ; 7a
 	const SCYTHER    ; 7b
-	const JYNX       ; 7c
+	const LINH       ; 7c
 	const ELECTABUZZ ; 7d
 	const MAGMAR     ; 7e
 	const PINSIR     ; 7f

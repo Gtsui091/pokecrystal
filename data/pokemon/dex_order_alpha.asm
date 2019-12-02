@@ -97,7 +97,7 @@ AlphabeticalPokedexOrder:
 	db JIGGLYPUFF
 	db JOLTEON
 	db JUMPLUFF
-	db JYNX
+	db LINH
 	db KABUTO
 	db KABUTOPS
 	db KADABRA

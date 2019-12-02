@@ -122,7 +122,7 @@ PokemonNames::
 	db "STARMIE@@@"
 	db "MR.MIME@@@"
 	db "SCYTHER@@@"
-	db "JYNX@@@@@@"
+	db "LINH@@@@@@"
 	db "ELECTABUZZ"
 	db "MAGMAR@@@@"
 	db "PINSIR@@@@"

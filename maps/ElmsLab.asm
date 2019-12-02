@@ -220,8 +220,8 @@ LinhPokeBallScript:
 	iftrue LookAtElmPokeBallScript
 	turnobject RAPHSLAB_RAPH, DOWN
 	refreshscreen
-	pokepic CHIKORITA
-	cry CHIKORITA
+	pokepic LINH
+	cry LINH
 	waitbutton
 	closepokepic
 	opentext
@@ -233,12 +233,12 @@ LinhPokeBallScript:
 	writetext ChoseStarterText
 	promptbutton
 	waitsfx
-	getmonname STRING_BUFFER_3, PIKACHU
+	getmonname STRING_BUFFER_3, LINH
 	writetext ReceivedStarterText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke CHIKORITA, 5, BERRY
+	givepoke LINH, 5, BERRY
 	closetext
 	applymovement PLAYER, AfterLinhMovement
 	sjump RaphDirectionsScript

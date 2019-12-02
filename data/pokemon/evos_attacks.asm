@@ -3161,7 +3161,7 @@ HitmontopEvosAttacks:
 	db 0 ; no more level-up moves
 
 SmoochumEvosAttacks:
-	db EVOLVE_LEVEL, 30, JYNX
+	db EVOLVE_LEVEL, 30, LINH
 	db 0 ; no more evolutions
 	db 1, POUND
 	db 1, LICK
