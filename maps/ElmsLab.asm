@@ -162,8 +162,8 @@ JoshPokeBallScript:
 	iftrue LookAtElmPokeBallScript
 	turnobject RAPHSLAB_RAPH, DOWN
 	refreshscreen
-	pokepic MEW
-	cry MEW
+	pokepic JOSH
+	cry JOSH
 	waitbutton
 	closepokepic
 	opentext
@@ -175,12 +175,12 @@ JoshPokeBallScript:
 	writetext ChoseStarterText
 	promptbutton
 	waitsfx
-	getmonname STRING_BUFFER_3, MEW
+	getmonname STRING_BUFFER_3, JOSH
 	writetext ReceivedStarterText
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	promptbutton
-	givepoke MEW, 5, BERRY
+	givepoke JOSH, 5, BERRY
 	closetext
 	readvar VAR_FACING
 	ifequal RIGHT, RaphDirectionsScript

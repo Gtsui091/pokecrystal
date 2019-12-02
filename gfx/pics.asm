@@ -186,7 +186,7 @@ KangaskhanBackpic:   INCBIN "gfx/pokemon/kangaskhan/back.2bpp.lz"
 
 SECTION "Pics 8", ROMX
 
-SeelFrontpic:        INCBIN "gfx/pokemon/seel/front.animated.2bpp.lz"
+SeelFrontpic:        INCBIN "gfx/pokemon/JOSH/front.animated.2bpp.lz"
 CrobatFrontpic:      INCBIN "gfx/pokemon/crobat/front.animated.2bpp.lz"
 ChanseyFrontpic:     INCBIN "gfx/pokemon/chansey/front.animated.2bpp.lz"
 TangelaFrontpic:     INCBIN "gfx/pokemon/tangela/front.animated.2bpp.lz"

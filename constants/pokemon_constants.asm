@@ -104,7 +104,7 @@
 	const FARFETCH_D ; 53
 	const DODUO      ; 54
 	const DODRIO     ; 55
-	const SEEL       ; 56
+	const JOSH       ; 56
 	const DEWGONG    ; 57
 	const GRIMER     ; 58
 	const MUK        ; 59

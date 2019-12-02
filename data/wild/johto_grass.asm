@@ -817,19 +817,19 @@ JohtoGrassWildMons:
 	; morn
 	db 22, KRABBY
 	db 23, ZUBAT
-	db 22, SEEL
+	db 22, JOSH
 	db 24, KRABBY
 	db 25, GOLBAT
-	db 24, SEEL
-	db 24, SEEL
+	db 24, JOSH
+	db 24, JOSH
 	; day
 	db 22, KRABBY
 	db 23, ZUBAT
-	db 22, SEEL
+	db 22, JOSH
 	db 24, KRABBY
 	db 25, GOLBAT
-	db 24, SEEL
-	db 24, SEEL
+	db 24, JOSH
+	db 24, JOSH
 	; nite
 	db 22, KRABBY
 	db 23, ZUBAT
@@ -844,19 +844,19 @@ JohtoGrassWildMons:
 	; morn
 	db 22, KRABBY
 	db 23, ZUBAT
-	db 22, SEEL
+	db 22, JOSH
 	db 24, KRABBY
 	db 25, GOLBAT
-	db 24, SEEL
-	db 24, SEEL
+	db 24, JOSH
+	db 24, JOSH
 	; day
 	db 22, KRABBY
 	db 23, ZUBAT
-	db 22, SEEL
+	db 22, JOSH
 	db 24, KRABBY
 	db 25, GOLBAT
-	db 24, SEEL
-	db 24, SEEL
+	db 24, JOSH
+	db 24, JOSH
 	; nite
 	db 22, KRABBY
 	db 23, ZUBAT
@@ -871,19 +871,19 @@ JohtoGrassWildMons:
 	; morn
 	db 22, KRABBY
 	db 23, ZUBAT
-	db 22, SEEL
+	db 22, JOSH
 	db 24, KRABBY
 	db 25, GOLBAT
-	db 24, SEEL
-	db 24, SEEL
+	db 24, JOSH
+	db 24, JOSH
 	; day
 	db 22, KRABBY
 	db 23, ZUBAT
-	db 22, SEEL
+	db 22, JOSH
 	db 24, KRABBY
 	db 25, GOLBAT
-	db 24, SEEL
-	db 24, SEEL
+	db 24, JOSH
+	db 24, JOSH
 	; nite
 	db 22, KRABBY
 	db 23, ZUBAT
@@ -898,19 +898,19 @@ JohtoGrassWildMons:
 	; morn
 	db 22, KRABBY
 	db 23, ZUBAT
-	db 22, SEEL
+	db 22, JOSH
 	db 24, KRABBY
 	db 25, GOLBAT
-	db 24, SEEL
-	db 24, SEEL
+	db 24, JOSH
+	db 24, JOSH
 	; day
 	db 22, KRABBY
 	db 23, ZUBAT
-	db 22, SEEL
+	db 22, JOSH
 	db 24, KRABBY
 	db 25, GOLBAT
-	db 24, SEEL
-	db 24, SEEL
+	db 24, JOSH
+	db 24, JOSH
 	; nite
 	db 22, KRABBY
 	db 23, ZUBAT
@@ -925,19 +925,19 @@ JohtoGrassWildMons:
 	; morn
 	db 22, KRABBY
 	db 23, ZUBAT
-	db 22, SEEL
+	db 22, JOSH
 	db 24, KRABBY
 	db 25, GOLBAT
-	db 24, SEEL
-	db 24, SEEL
+	db 24, JOSH
+	db 24, JOSH
 	; day
 	db 22, KRABBY
 	db 23, ZUBAT
-	db 22, SEEL
+	db 22, JOSH
 	db 24, KRABBY
 	db 25, GOLBAT
-	db 24, SEEL
-	db 24, SEEL
+	db 24, JOSH
+	db 24, JOSH
 	; nite
 	db 22, KRABBY
 	db 23, ZUBAT
@@ -952,19 +952,19 @@ JohtoGrassWildMons:
 	; morn
 	db 23, KRABBY
 	db 24, ZUBAT
-	db 23, SEEL
+	db 23, JOSH
 	db 25, KRABBY
 	db 26, GOLBAT
-	db 25, SEEL
-	db 25, SEEL
+	db 25, JOSH
+	db 25, JOSH
 	; day
 	db 23, KRABBY
 	db 24, ZUBAT
-	db 23, SEEL
+	db 23, JOSH
 	db 25, KRABBY
 	db 26, GOLBAT
-	db 25, SEEL
-	db 25, SEEL
+	db 25, JOSH
+	db 25, JOSH
 	; nite
 	db 23, KRABBY
 	db 24, ZUBAT
@@ -979,19 +979,19 @@ JohtoGrassWildMons:
 	; morn
 	db 24, KRABBY
 	db 25, ZUBAT
-	db 24, SEEL
+	db 24, JOSH
 	db 26, KRABBY
 	db 27, GOLBAT
-	db 26, SEEL
-	db 26, SEEL
+	db 26, JOSH
+	db 26, JOSH
 	; day
 	db 24, KRABBY
 	db 25, ZUBAT
-	db 24, SEEL
+	db 24, JOSH
 	db 26, KRABBY
 	db 27, GOLBAT
-	db 26, SEEL
-	db 26, SEEL
+	db 26, JOSH
+	db 26, JOSH
 	; nite
 	db 24, KRABBY
 	db 25, ZUBAT
@@ -1006,19 +1006,19 @@ JohtoGrassWildMons:
 	; morn
 	db 25, KRABBY
 	db 26, ZUBAT
-	db 25, SEEL
+	db 25, JOSH
 	db 27, KRABBY
 	db 28, GOLBAT
-	db 27, SEEL
-	db 27, SEEL
+	db 27, JOSH
+	db 27, JOSH
 	; day
 	db 25, KRABBY
 	db 26, ZUBAT
-	db 25, SEEL
+	db 25, JOSH
 	db 27, KRABBY
 	db 28, GOLBAT
-	db 27, SEEL
-	db 27, SEEL
+	db 27, JOSH
+	db 27, JOSH
 	; nite
 	db 25, KRABBY
 	db 26, ZUBAT

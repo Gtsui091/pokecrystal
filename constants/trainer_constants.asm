@@ -332,7 +332,7 @@ KRIS EQU __enum__
 	const WADE1
 	const BUG_CATCHER_BENNY
 	const AL
-	const JOSH
+	const JOSHS
 	const ARNIE1
 	const KEN
 	const WADE2

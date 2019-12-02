@@ -86,7 +86,7 @@ KantoMonSpecials:
 	db  58 ; FARFETCH_D
 	db  35 ; DODUO
 	db  60 ; DODRIO
-	db  70 ; SEEL
+	db  70 ; JOSH
 	db  95 ; DEWGONG
 	db  40 ; GRIMER
 	db  65 ; MUK

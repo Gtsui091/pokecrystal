@@ -192,7 +192,7 @@ AlphabeticalPokedexOrder:
 	db SCYTHER
 	db SEADRA
 	db SEAKING
-	db SEEL
+	db JOSH
 	db SENTRET
 	db SHELLDER
 	db SHUCKLE

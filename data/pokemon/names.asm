@@ -84,7 +84,7 @@ PokemonNames::
 	db "FARFETCH'D"
 	db "DODUO@@@@@"
 	db "DODRIO@@@@"
-	db "SEEL@@@@@@"
+	db "JOSH@@@@@@"
 	db "DEWGONG@@@"
 	db "GRIMER@@@@"
 	db "MUK@@@@@@@"
