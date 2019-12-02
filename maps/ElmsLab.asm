@@ -865,8 +865,8 @@ TakeLinhText:
 	done
 
 DidntChooseStarterText:
-	text "RAPH: Think it over"
-	line "carefully."
+	text "RAPH: Think it"
+	line " over carefully"
 
 	para "Your partner"
 	line "could fail you."
