@@ -1537,10 +1537,10 @@ _OakText1::
 	para "Welcome to the"
 	line "world of BCIT!"
 
-	para "My name's DEAN."
+	para "My name's RAPH."
 
 	para "People call me "
-	line "DEAN, the DEAN!"
+	line "RAPH, the God!"
 	prompt
 
 _OakText2::

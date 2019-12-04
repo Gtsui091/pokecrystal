@@ -206,9 +206,9 @@ Text_WhatDoYouThinkYoureDoing:
 Text_ItsDangerousToGoAlone:
 	text "It's dangerous to"
 	line "go out without a"
-	cont "#MON!"
+	cont "MACBOOK!"
 
-	para "Wild #MON"
+	para "Wild students"
 	line "jump out of the"
 
 	para "grass on the way"
@@ -216,8 +216,8 @@ Text_ItsDangerousToGoAlone:
 	done
 
 Text_YourMonIsAdorable:
-	text "Oh! Your #MON"
-	line "is adorable!"
+	text "Oh! Your MACBOOK"
+	line "is cool!"
 	cont "I wish I had one!"
 	done
 
@@ -241,16 +241,16 @@ Text_CallMomOnGear:
 Text_ElmDiscoveredNewMon:
 	text "Yo, <PLAYER>!"
 
-	para "I hear PROF.ELM"
+	para "I hear PROF.RAPH"
 	line "discovered some"
-	cont "new #MON."
+	cont "new MACBOOK."
 	done
 
 NewBarkTownRivalText1:
 	text "<……>"
 
 	para "So this is the"
-	line "famous ELM #MON"
+	line "famous RAPH ARCH"
 	cont "LAB…"
 	done
 
@@ -272,11 +272,11 @@ NewBarkTownPlayersHouseSignText:
 	done
 
 NewBarkTownElmsLabSignText:
-	text "ELM #MON LAB"
+	text "RAPH's ARCH LAB"
 	done
 
 NewBarkTownElmsHouseSignText:
-	text "ELM'S HOUSE"
+	text "RAPH'S HOUSE"
 	done
 
 NewBarkTown_MapEvents:
