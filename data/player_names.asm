@@ -10,10 +10,10 @@ ChrisNameMenuHeader:
 	db 5 ; items
 	db "NEW NAME@"
 MalePlayerNameArray:
-	db "RICK@"
-	db "HERBERT@"
-	db "ALBERT@"
-	db "CLARENCE@"
+	db "MAY@"
+	db "MAY@"
+	db "MAY@"
+	db "MAY@"
 	db 2 ; displacement
 	db " NAME @" ; title
 

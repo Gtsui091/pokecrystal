@@ -186,7 +186,7 @@ KangaskhanBackpic:   INCBIN "gfx/pokemon/kangaskhan/back.2bpp.lz"
 
 SECTION "Pics 8", ROMX
 
-SeelFrontpic:        INCBIN "gfx/pokemon/JOSH/front.animated.2bpp.lz"
+JoshFrontpic:        INCBIN "gfx/pokemon/josh/front.animated.2bpp.lz"
 CrobatFrontpic:      INCBIN "gfx/pokemon/crobat/front.animated.2bpp.lz"
 ChanseyFrontpic:     INCBIN "gfx/pokemon/chansey/front.animated.2bpp.lz"
 TangelaFrontpic:     INCBIN "gfx/pokemon/tangela/front.animated.2bpp.lz"
@@ -473,6 +473,7 @@ Rival1Pic:           INCBIN "gfx/trainers/rival1.2bpp.lz"
 SwinubBackpic:       INCBIN "gfx/pokemon/swinub/back.2bpp.lz"
 
 
+
 SECTION "Pics 15", ROMX
 
 MewtwoBackpic:       INCBIN "gfx/pokemon/mewtwo/back.2bpp.lz"
@@ -535,7 +536,7 @@ Porygon2Backpic:     INCBIN "gfx/pokemon/porygon2/back.2bpp.lz"
 JasminePic:          INCBIN "gfx/trainers/jasmine.2bpp.lz"
 PinecoBackpic:       INCBIN "gfx/pokemon/pineco/back.2bpp.lz"
 MetapodFrontpic:     INCBIN "gfx/pokemon/metapod/front.animated.2bpp.lz"
-SeelBackpic:         INCBIN "gfx/pokemon/seel/back.2bpp.lz"
+JoshBackpic:         INCBIN "gfx/pokemon/josh/back.2bpp.lz"
 QuagsireBackpic:     INCBIN "gfx/pokemon/quagsire/back.2bpp.lz"
 WhitneyPic:          INCBIN "gfx/trainers/whitney.2bpp.lz"
 JolteonBackpic:      INCBIN "gfx/pokemon/jolteon/back.2bpp.lz"
@@ -711,56 +712,6 @@ INCBIN "gfx/pokemon/wooper/back.2bpp.lz"
 INCBIN "gfx/pokemon/tauros/back.2bpp.lz"
 INCBIN "gfx/pokemon/unown_x/front.animated.2bpp.lz"
 INCBIN "gfx/pokemon/unown_n/front.animated.2bpp.lz"
-INCBIN "gfx/pokemon/tangela/back.2bpp.lz"
-INCBIN "gfx/pokemon/voltorb/back.2bpp.lz"
-INCBIN "gfx/pokemon/unown_j/front.animated.2bpp.lz"
-INCBIN "gfx/pokemon/mantine/back.2bpp.lz"
-INCBIN "gfx/pokemon/unown_l/front.animated.2bpp.lz"
-INCBIN "gfx/pokemon/piloswine/back.2bpp.lz"
-INCBIN "gfx/pokemon/unown_m/front.animated.2bpp.lz"
-INCBIN "gfx/pokemon/unown_f/front.animated.2bpp.lz"
-INCBIN "gfx/pokemon/natu/back.2bpp.lz"
-INCBIN "gfx/pokemon/unown_a/front.animated.2bpp.lz"
-INCBIN "gfx/pokemon/golem/back.2bpp.lz"
-INCBIN "gfx/pokemon/unown_u/front.animated.2bpp.lz"
-INCBIN "gfx/pokemon/diglett/back.2bpp.lz"
-INCBIN "gfx/pokemon/unown_q/front.animated.2bpp.lz"
-INCBIN "gfx/pokemon/unown_p/front.animated.2bpp.lz"
-INCBIN "gfx/pokemon/unown_c/back.2bpp.lz"
-INCBIN "gfx/pokemon/LINH/back.2bpp.lz"
-INCBIN "gfx/pokemon/golbat/back.2bpp.lz"
-INCBIN "gfx/pokemon/unown_y/front.animated.2bpp.lz"
-INCBIN "gfx/pokemon/unown_g/back.2bpp.lz"
-INCBIN "gfx/pokemon/unown_i/front.animated.2bpp.lz"
-INCBIN "gfx/pokemon/unown_v/back.2bpp.lz"
-INCBIN "gfx/pokemon/forretress/back.2bpp.lz"
-INCBIN "gfx/pokemon/unown_s/back.2bpp.lz"
-INCBIN "gfx/pokemon/unown_r/front.animated.2bpp.lz"
-INCBIN "gfx/pokemon/unown_e/back.2bpp.lz"
-INCBIN "gfx/pokemon/unown_j/back.2bpp.lz"
-INCBIN "gfx/pokemon/unown_b/back.2bpp.lz"
-INCBIN "gfx/pokemon/unown_o/back.2bpp.lz"
-INCBIN "gfx/pokemon/unown_z/back.2bpp.lz"
-INCBIN "gfx/pokemon/unown_w/back.2bpp.lz"
-INCBIN "gfx/pokemon/unown_n/back.2bpp.lz"
-INCBIN "gfx/pokemon/unown_a/back.2bpp.lz"
-INCBIN "gfx/pokemon/unown_m/back.2bpp.lz"
-INCBIN "gfx/pokemon/unown_k/back.2bpp.lz"
-INCBIN "gfx/pokemon/unown_t/back.2bpp.lz"
-INCBIN "gfx/pokemon/unown_x/back.2bpp.lz"
-INCBIN "gfx/pokemon/unown_l/back.2bpp.lz"
-INCBIN "gfx/pokemon/unown_u/back.2bpp.lz"
-INCBIN "gfx/pokemon/unown_q/back.2bpp.lz"
-INCBIN "gfx/pokemon/unown_y/back.2bpp.lz"
-INCBIN "gfx/pokemon/unown_p/back.2bpp.lz"
-INCBIN "gfx/pokemon/unown_i/back.2bpp.lz"
-INCBIN "gfx/pokemon/unown_r/back.2bpp.lz"
-
-
-; Sections "Pics 20" to "Pics 24" are not used for any graphics,
-; but entries for their banks exist in FixPicBank (see engine/gfx/load_pics.asm).
-
-SECTION "Pics 20", ROMX
 DugtrioBackpic:      INCBIN "gfx/pokemon/dugtrio/back.2bpp.lz"
 WeepinbellBackpic:   INCBIN "gfx/pokemon/weepinbell/back.2bpp.lz"
 NidoranFBackpic:     INCBIN "gfx/pokemon/nidoran_f/back.2bpp.lz"
@@ -782,6 +733,15 @@ CaterpieBackpic:     INCBIN "gfx/pokemon/caterpie/back.2bpp.lz"
 VoltorbFrontpic:     INCBIN "gfx/pokemon/voltorb/front.animated.2bpp.lz"
 LugiaBackpic:        INCBIN "gfx/pokemon/lugia/back.2bpp.lz"
 PrycePic:            INCBIN "gfx/trainers/pryce.2bpp.lz"
+
+
+
+; Sections "Pics 20" to "Pics 24" are not used for any graphics,
+; but entries for their banks exist in FixPicBank (see engine/gfx/load_pics.asm).
+
+SECTION "Pics 20", ROMX
+
+
 
 SECTION "Pics 21", ROMX
 

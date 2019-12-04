@@ -172,8 +172,8 @@ PokemonPicPointers::
 	dba_pic DoduoBackpic
 	dba_pic DodrioFrontpic
 	dba_pic DodrioBackpic
-	dba_pic SeelFrontpic
-	dba_pic SeelBackpic
+	dba_pic JoshFrontpic
+	dba_pic JoshBackpic
 	dba_pic DewgongFrontpic
 	dba_pic DewgongBackpic
 	dba_pic GrimerFrontpic
