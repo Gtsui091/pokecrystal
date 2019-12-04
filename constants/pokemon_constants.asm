@@ -180,7 +180,7 @@ JOHTO_POKEMON EQU const_value
 	const TOTODILE   ; 9e
 	const CROCONAW   ; 9f
 	const FERALIGATR ; a0
-	const SENTRET    ; a1
+	const XOR_GATE    ; a1
 	const FURRET     ; a2
 	const HOOTHOOT   ; a3
 	const NOCTOWL    ; a4

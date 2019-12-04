@@ -19,7 +19,7 @@ NewPokedexOrder:
 	db NOCTOWL
 	db RATTATA
 	db RATICATE
-	db SENTRET
+	db XOR_GATE
 	db FURRET
 	db PICHU
 	db PIKACHU

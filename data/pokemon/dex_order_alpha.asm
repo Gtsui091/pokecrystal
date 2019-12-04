@@ -193,7 +193,7 @@ AlphabeticalPokedexOrder:
 	db SEADRA
 	db SEAKING
 	db JOSH
-	db SENTRET
+	db XOR_GATE
 	db SHELLDER
 	db SHUCKLE
 	db SKARMORY
