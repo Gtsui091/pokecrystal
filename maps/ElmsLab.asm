@@ -775,7 +775,7 @@ RaphText_Accepted:
 	done
 
 RaphText_Refused:
-	text "Are don't want"
+	text "You don't want"
 	line "to fail right?"
 	done
 
@@ -873,9 +873,10 @@ DidntChooseStarterText:
 	done
 
 ChoseStarterText:
-	text "RAPH: I think"
-	line "that's a great"
-	cont "Student!"
+	text "RAPH: Uhhhhh"
+	line "I don't know"
+	cont "about that"
+	para "but okay..."
 	done
 
 ReceivedStarterText:
