@@ -505,10 +505,6 @@ MachopBackpic:       INCBIN "gfx/pokemon/machop/back.2bpp.lz"
 AbraBackpic:         INCBIN "gfx/pokemon/abra/back.2bpp.lz"
 AerodactylBackpic:   INCBIN "gfx/pokemon/aerodactyl/back.2bpp.lz"
 KakunaFrontpic:      INCBIN "gfx/pokemon/kakuna/front.animated.2bpp.lz"
-DugtrioBackpic:      INCBIN "gfx/pokemon/dugtrio/back.2bpp.lz"
-WeepinbellBackpic:   INCBIN "gfx/pokemon/weepinbell/back.2bpp.lz"
-NidoranFBackpic:     INCBIN "gfx/pokemon/nidoran_f/back.2bpp.lz"
-GravelerBackpic:     INCBIN "gfx/pokemon/graveler/back.2bpp.lz"
 AipomBackpic:        INCBIN "gfx/pokemon/aipom/back.2bpp.lz"
 EspeonBackpic:       INCBIN "gfx/pokemon/espeon/back.2bpp.lz"
 WeedleFrontpic:      INCBIN "gfx/pokemon/weedle/front.animated.2bpp.lz"
@@ -782,6 +778,10 @@ INCBIN "gfx/pokemon/unown_r/back.2bpp.lz"
 ; but entries for their banks exist in FixPicBank (see engine/gfx/load_pics.asm).
 
 SECTION "Pics 20", ROMX
+DugtrioBackpic:      INCBIN "gfx/pokemon/dugtrio/back.2bpp.lz"
+WeepinbellBackpic:   INCBIN "gfx/pokemon/weepinbell/back.2bpp.lz"
+NidoranFBackpic:     INCBIN "gfx/pokemon/nidoran_f/back.2bpp.lz"
+GravelerBackpic:     INCBIN "gfx/pokemon/graveler/back.2bpp.lz"
 
 SECTION "Pics 21", ROMX
 
