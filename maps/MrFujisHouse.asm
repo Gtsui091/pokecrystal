@@ -35,7 +35,7 @@ MrFujisNidorino:
 MrFujisPidgey:
 	opentext
 	writetext MrFujisPidgeyText
-	cry PIDGEY
+	cry HALF_ADDER
 	waitbutton
 	closetext
 	end
@@ -74,7 +74,7 @@ MrFujisNidorinoText:
 	done
 
 MrFujisPidgeyText:
-	text "PIDGEY: Pijji!"
+	text "HALF_ADDER: Pijji!"
 	done
 
 MrFujisHouse_MapEvents:

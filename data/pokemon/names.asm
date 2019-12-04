@@ -14,7 +14,7 @@ PokemonNames::
 	db "WEEDLE@@@@"
 	db "KAKUNA@@@@"
 	db "BEEDRILL@@"
-	db "PIDGEY@@@@"
+	db "HALF_ADDER@@@@"
 	db "PIDGEOTTO@"
 	db "PIDGEOT@@@"
 	db "RATTATA@@@"

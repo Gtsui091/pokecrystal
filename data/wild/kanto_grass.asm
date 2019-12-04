@@ -167,21 +167,21 @@ KantoGrassWildMons:
 	map_id ROUTE_1
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 2, PIDGEY
+	db 2, HALF_ADDER
 	db 2, RATTATA
 	db 3, XOR_GATE
-	db 3, PIDGEY
+	db 3, HALF_ADDER
 	db 6, FURRET
-	db 4, PIDGEY
-	db 4, PIDGEY
+	db 4, HALF_ADDER
+	db 4, HALF_ADDER
 	; day
-	db 2, PIDGEY
+	db 2, HALF_ADDER
 	db 2, RATTATA
 	db 3, XOR_GATE
-	db 3, PIDGEY
+	db 3, HALF_ADDER
 	db 6, FURRET
-	db 4, PIDGEY
-	db 4, PIDGEY
+	db 4, HALF_ADDER
+	db 4, HALF_ADDER
 	; nite
 	db 2, HOOTHOOT
 	db 2, RATTATA
@@ -196,15 +196,15 @@ KantoGrassWildMons:
 	; morn
 	db 3, CATERPIE
 	db 3, LEDYBA
-	db 5, PIDGEY
+	db 5, HALF_ADDER
 	db 7, BUTTERFREE
 	db 7, LEDIAN
 	db 4, PIKACHU
 	db 4, PIKACHU
 	; day
 	db 3, CATERPIE
-	db 3, PIDGEY
-	db 5, PIDGEY
+	db 3, HALF_ADDER
+	db 5, HALF_ADDER
 	db 7, BUTTERFREE
 	db 7, PIDGEOTTO
 	db 4, PIKACHU
@@ -275,7 +275,7 @@ KantoGrassWildMons:
 	map_id ROUTE_5
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 13, PIDGEY
+	db 13, HALF_ADDER
 	db 13, SNUBBULL
 	db 15, PIDGEOTTO
 	db 12, ABRA
@@ -283,7 +283,7 @@ KantoGrassWildMons:
 	db 14, ABRA
 	db 14, ABRA
 	; day
-	db 13, PIDGEY
+	db 13, HALF_ADDER
 	db 13, SNUBBULL
 	db 15, PIDGEOTTO
 	db 12, ABRA
@@ -708,7 +708,7 @@ KantoGrassWildMons:
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 10, CATERPIE
-	db 10, PIDGEY
+	db 10, HALF_ADDER
 	db 12, PIDGEOTTO
 	db 12, METAPOD
 	db 10, BELLSPROUT
@@ -716,7 +716,7 @@ KantoGrassWildMons:
 	db 14, BUTTERFREE
 	; day
 	db 10, CATERPIE
-	db 10, PIDGEY
+	db 10, HALF_ADDER
 	db 12, PIDGEOTTO
 	db 12, METAPOD
 	db 10, BELLSPROUT

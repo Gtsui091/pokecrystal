@@ -10,7 +10,7 @@ NewPokedexOrder:
 	db TOTODILE
 	db CROCONAW
 	db FERALIGATR
-	db PIDGEY
+	db HALF_ADDER
 	db PIDGEOTTO
 	db PIDGEOT
 	db SPEAROW

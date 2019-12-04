@@ -547,7 +547,7 @@ UnknownText_0x61cef:
 	line "new thing for the"
 	cont "TRADE CORNER!"
 
-	para "I make a PIDGEY"
+	para "I make a HALF_ADDER"
 	line "hold MAIL, then"
 
 	para "put it up for"
@@ -560,7 +560,7 @@ UnknownText_0x61cef:
 	para "be traded with all"
 	line "sorts of people!"
 
-	para "I call it PIDGEY"
+	para "I call it HALF_ADDER"
 	line "MAIL!"
 
 	para "If it becomes"

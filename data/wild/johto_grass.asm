@@ -332,7 +332,7 @@ JohtoGrassWildMons:
 	db 12, NIDORAN_M
 	db 12, NIDORAN_F
 	db 14, LEDYBA
-	db 13, PIDGEY
+	db 13, HALF_ADDER
 	db 10, CATERPIE
 	db 10, WEEDLE
 	db 10, WEEDLE
@@ -340,7 +340,7 @@ JohtoGrassWildMons:
 	db 12, NIDORAN_F
 	db 12, NIDORAN_M
 	db 14, SUNKERN
-	db 13, PIDGEY
+	db 13, HALF_ADDER
 	db 10, CATERPIE
 	db 10, WEEDLE
 	db 10, WEEDLE
@@ -549,7 +549,7 @@ JohtoGrassWildMons:
 	db 5, WEEDLE
 	db 7, METAPOD
 	db 7, KAKUNA
-	db 7, PIDGEY
+	db 7, HALF_ADDER
 	db 6, PARAS
 	db 6, PARAS
 	; day
@@ -557,7 +557,7 @@ JohtoGrassWildMons:
 	db 5, WEEDLE
 	db 7, METAPOD
 	db 7, KAKUNA
-	db 7, PIDGEY
+	db 7, HALF_ADDER
 	db 6, PARAS
 	db 6, PARAS
 	; nite
@@ -1193,21 +1193,21 @@ JohtoGrassWildMons:
 	map_id ROUTE_29
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 2, PIDGEY
+	db 2, HALF_ADDER
 	db 2, XOR_GATE
-	db 3, PIDGEY
+	db 3, HALF_ADDER
 	db 3, XOR_GATE
-	db 2, RATTATA
-	db 3, HOPPIP
-	db 3, HOPPIP
+	db 2, HALF_ADDER
+	db 3, HALF_ADDER
+	db 3, XOR_GATE
 	; day
-	db 2, PIDGEY
+	db 2, HALF_ADDER
 	db 2, XOR_GATE
-	db 3, PIDGEY
+	db 3, HALF_ADDER
 	db 3, XOR_GATE
-	db 2, RATTATA
-	db 3, HOPPIP
-	db 3, HOPPIP
+	db 2, XOR_GATE
+	db 3, HALF_ADDER
+	db 3, HALF_ADDER
 	; nite
 	db 2, HOOTHOOT
 	db 2, RATTATA
@@ -1223,15 +1223,15 @@ JohtoGrassWildMons:
 	db 3, LEDYBA
 	db 3, CATERPIE
 	db 4, CATERPIE
-	db 4, PIDGEY
+	db 4, HALF_ADDER
 	db 3, WEEDLE
 	db 4, HOPPIP
 	db 4, HOPPIP
 	; day
-	db 3, PIDGEY
+	db 3, HALF_ADDER
 	db 3, CATERPIE
 	db 4, CATERPIE
-	db 4, PIDGEY
+	db 4, HALF_ADDER
 	db 3, WEEDLE
 	db 4, HOPPIP
 	db 4, HOPPIP
@@ -1250,15 +1250,15 @@ JohtoGrassWildMons:
 	db 4, LEDYBA
 	db 4, CATERPIE
 	db 5, BELLSPROUT
-	db 5, PIDGEY
+	db 5, HALF_ADDER
 	db 4, WEEDLE
 	db 5, HOPPIP
 	db 5, HOPPIP
 	; day
-	db 4, PIDGEY
+	db 4, HALF_ADDER
 	db 4, CATERPIE
 	db 5, BELLSPROUT
-	db 5, PIDGEY
+	db 5, HALF_ADDER
 	db 4, WEEDLE
 	db 5, HOPPIP
 	db 5, HOPPIP
@@ -1278,7 +1278,7 @@ JohtoGrassWildMons:
 	db 5, RATTATA
 	db 7, BELLSPROUT
 	db 6, HOPPIP
-	db 7, PIDGEY
+	db 7, HALF_ADDER
 	db 7, HOPPIP
 	db 7, HOPPIP
 	; day
@@ -1286,7 +1286,7 @@ JohtoGrassWildMons:
 	db 5, RATTATA
 	db 7, BELLSPROUT
 	db 6, HOPPIP
-	db 7, PIDGEY
+	db 7, HALF_ADDER
 	db 7, HOPPIP
 	db 7, HOPPIP
 	; nite
@@ -1330,7 +1330,7 @@ JohtoGrassWildMons:
 	; morn
 	db 10, SNUBBULL
 	db 11, RATTATA
-	db 12, PIDGEY
+	db 12, HALF_ADDER
 	db 10, ABRA
 	db 12, JIGGLYPUFF
 	db 10, DITTO
@@ -1338,7 +1338,7 @@ JohtoGrassWildMons:
 	; day
 	db 10, SNUBBULL
 	db 11, RATTATA
-	db 12, PIDGEY
+	db 12, HALF_ADDER
 	db 10, ABRA
 	db 12, JIGGLYPUFF
 	db 10, DITTO
@@ -1356,7 +1356,7 @@ JohtoGrassWildMons:
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 12, SNUBBULL
-	db 14, PIDGEY
+	db 14, HALF_ADDER
 	db 13, GROWLITHE
 	db 10, ABRA
 	db 12, JIGGLYPUFF
@@ -1364,7 +1364,7 @@ JohtoGrassWildMons:
 	db 12, YANMA
 	; day
 	db 12, SNUBBULL
-	db 14, PIDGEY
+	db 14, HALF_ADDER
 	db 13, GROWLITHE
 	db 10, ABRA
 	db 12, JIGGLYPUFF
@@ -1383,20 +1383,20 @@ JohtoGrassWildMons:
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 4, LEDYBA
-	db 4, PIDGEY
+	db 4, HALF_ADDER
 	db 5, BELLSPROUT
 	db 5, GROWLITHE
-	db 5, PIDGEY
-	db 6, PIDGEY
-	db 6, PIDGEY
+	db 5, HALF_ADDER
+	db 6, HALF_ADDER
+	db 6, HALF_ADDER
 	; day
-	db 4, PIDGEY
-	db 4, PIDGEY
+	db 4, HALF_ADDER
+	db 4, HALF_ADDER
 	db 5, BELLSPROUT
 	db 5, GROWLITHE
-	db 5, PIDGEY
-	db 6, PIDGEY
-	db 6, PIDGEY
+	db 5, HALF_ADDER
+	db 6, HALF_ADDER
+	db 6, HALF_ADDER
 	; nite
 	db 4, SPINARAK
 	db 4, HOOTHOOT
@@ -1411,19 +1411,19 @@ JohtoGrassWildMons:
 	; morn
 	db 13, LEDYBA
 	db 14, GROWLITHE
-	db 15, PIDGEY
+	db 15, HALF_ADDER
 	db 16, GROWLITHE
 	db 15, PIDGEOTTO
 	db 15, LEDIAN
 	db 15, LEDIAN
 	; day
-	db 13, PIDGEY
+	db 13, HALF_ADDER
 	db 14, GROWLITHE
-	db 15, PIDGEY
+	db 15, HALF_ADDER
 	db 16, GROWLITHE
 	db 15, PIDGEOTTO
-	db 15, PIDGEY
-	db 15, PIDGEY
+	db 15, HALF_ADDER
+	db 15, HALF_ADDER
 	; nite
 	db 13, SPINARAK
 	db 14, STANTLER

@@ -160,7 +160,7 @@ AlphabeticalPokedexOrder:
 	db PICHU
 	db PIDGEOT
 	db PIDGEOTTO
-	db PIDGEY
+	db HALF_ADDER
 	db PIKACHU
 	db PILOSWINE
 	db PINECO
